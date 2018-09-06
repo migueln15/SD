@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="RegistrarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NomUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApePatUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApeMatUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FecNacimiento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Contraseña" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegistrarUsuarioResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validaUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contraseña" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="validaUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validaUsuarioResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
